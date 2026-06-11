@@ -1,0 +1,34 @@
+{
+    "name": "@moviebox/api",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "start": "node src/index.js",
+        "lint": "eslint . --ext .js"
+    },
+    "dependencies": {
+        "axios": "^1.7.9",
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "express-validator": "^7.2.0",
+        "helmet": "^7.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.4.1",
+        "rate-limiter-flexible": "^6.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-unused-imports": "^4.4.1",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.4",
+        "prettier": "^3.8.3",
+        "supertest": "^7.0.0"
+    }
+}

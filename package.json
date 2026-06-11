@@ -1,0 +1,21 @@
+{
+    "name": "moviebox",
+    "private": true,
+    "version": "0.1.0",
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "concurrently -n web,api -c cyan,magenta \"npm run dev --workspace @moviebox/web\" \"npm run dev --workspace @moviebox/api\"",
+        "lint": "npm run lint --workspaces",
+        "build": "npm run build --workspaces"
+    },
+    "devDependencies": {
+        "concurrently": "^9.0.0"
+    },
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "dotenv": "^17.4.2"
+    }
+}

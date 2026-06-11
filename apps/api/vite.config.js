@@ -1,0 +1,1 @@
+// Placeholder (API doesn't use Vite).
